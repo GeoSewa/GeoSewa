@@ -1,7 +1,8 @@
-import { ReactElement } from 'react';
+import { ReactElement } from "react";
+import LoginModal from "@Components/Home/LoginModal";
 
-export type ModalContentsType = 'sign-up-success' | null;
-export type PromptDialogContentsType = 'delete-layer' | null;
+export type ModalContentsType = "login" | null;
+export type PromptDialogContentsType = "delete-layer" | null;
 
 type ModalReturnType = {
   title: string;
@@ -12,31 +13,32 @@ type ModalReturnType = {
 
 export function getModalContent(content: ModalContentsType): ModalReturnType {
   switch (content) {
-    case 'sign-up-success':
+    case "login":
       return {
-        title: '',
-        content: <></>,
+        title: "",
+        content: <LoginModal />,
+        className: "naxatw-w-[30rem]",
       };
     default:
       return {
-        title: '',
+        title: "",
         content: <></>,
       };
   }
 }
 
 export function getPromptDialogContent(
-  content: PromptDialogContentsType,
+  content: PromptDialogContentsType
 ): ModalReturnType {
   switch (content) {
-    case 'delete-layer':
+    case "delete-layer":
       return {
-        title: '',
+        title: "",
         content: <></>,
       };
     default:
       return {
-        title: '',
+        title: "",
         content: <></>,
       };
   }
