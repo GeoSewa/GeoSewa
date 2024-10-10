@@ -50,9 +50,8 @@ export default function App() {
         !process.env.DISABLE_DOM_TO_CODE &&
         initDomToCode()}
 
-      <div className="app-root">
+      <div className="app-root naxatw-flex naxatw-flex-col">
         <Navbar />
-
         <ToastContainer />
 
         <Modal
