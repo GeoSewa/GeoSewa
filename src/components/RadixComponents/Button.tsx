@@ -22,7 +22,7 @@ const buttonVariants = cva(
         secondary:
           "naxatw-bg-white naxatw-text-primary naxatw-border naxatw-border-primary hover:naxatw-shadow-top",
         ghost:
-          "naxatw-text-white naxatw-font-bold disabled:naxatw-text-grey-600 hover:naxatw-text-primary",
+          "naxatw-text-primary naxatw-font-bold disabled:naxatw-text-grey-600 hover:naxatw-text-red-500",
         link: `naxatw-text-primary naxatw-font-bold naxatw-underline-offset-4 naxatw-underline hover:naxatw-no-underline
          naxatw-text-primarycolor hover:naxatw-shadow hover:naxatw-shadow-primary`,
       },

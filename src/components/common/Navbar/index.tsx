@@ -1,10 +1,13 @@
+import { useTypedDispatch } from "@Store/hooks";
 import { NavLink, useNavigate } from "react-router-dom";
 import { navigationLinks } from "@Constants/index";
 import { Button } from "@Components/RadixComponents/Button";
+import { toggleModal } from "@Store/actions/common";
 import Icon from "../Icon";
 import { FlexRow } from "../Layouts";
 
 export default function Navbar() {
+  const dispatch = useTypedDispatch();
   const navigate = useNavigate();
 
   return (
@@ -39,6 +42,7 @@ export default function Navbar() {
             <Button
               variant="outline"
               className="naxatw-w-24 naxatw-text-body-lg"
+              onClick={() => dispatch(toggleModal("login"))}
             >
               Login
             </Button>
