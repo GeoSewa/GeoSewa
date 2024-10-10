@@ -10,19 +10,34 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1.25rem",
+        sm: "1.25rem",
+        md: "2.125rem",
+        lg: "4.125rem",
+        xl: "8rem",
+        "2xl": "8rem",
+      },
       screens: {
-        "2xl": "1400px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1440px",
       },
     },
     extend: {
       fontFamily: {
         primary: ["Product Sans", "sans-serif"],
       },
+      height: {
+        "screen-nav": "calc(100vh - 56px)",
+      },
       colors: {
-        primary: "#2F908F",
-        secondary: "#F76C6C",
-        tertiary: "#F2F2F2",
+        primary: "#001F3F",
+        secondary: "#3A6D8C",
+        tertiary: "#6A9AB0",
+        fourth: "#EAD881",
         grey: {
           50: "#FAFAFA",
           100: "#F5F5F5",
@@ -36,7 +51,6 @@ module.exports = {
           900: "#212121",
         },
       },
-
       fontSize: {
         "body-lg": [
           "0.938rem",
