@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import * as React from 'react';
-import { Slot } from '@radix-ui/react-slot';
-import { VariantProps, cva } from 'class-variance-authority';
-import { cn } from '@Utils/index';
-import Icon from '@Components/common/Icon';
-import Spinner from '@Components/common/Spinner';
+import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
+import { VariantProps, cva } from "class-variance-authority";
+import { cn } from "@Utils/index";
+import Icon from "@Components/common/Icon";
+import Spinner from "@Components/common/Spinner";
 
 const buttonVariants = cva(
   `naxatw-inline-flex naxatw-items-center naxatw-justify-center naxatw-rounded-md naxatw-text-sm 
@@ -14,29 +14,29 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'naxatw-bg-primary-400 naxatw-text-white hover:naxatw-shadow-top hover:naxatw-shadow-primary-400',
+          "naxatw-bg-primary naxatw-text-white hover:naxatw-shadow-top hover:naxatw-shadow-primary",
         destructive:
-          'naxatw-bg-red-500 naxatw-text-white hover:naxatw-shadow-top hover:naxatw-shadow-red-500',
-        outline: `naxatw-border naxatw-text-primary-400 naxatw-border-primary-400 naxatw-border-input 
+          "naxatw-bg-red-500 naxatw-text-white hover:naxatw-shadow-top hover:naxatw-shadow-red-500",
+        outline: `naxatw-border naxatw-text-primary naxatw-border- hover:naxatw-bg-primary hover:naxatw-text-white naxatw-border-input 
         hover:naxatw-shadow-top naxatw-bg-white`,
         secondary:
-          'naxatw-bg-white naxatw-text-primary-400 naxatw-border naxatw-border-primary-400 hover:naxatw-shadow-top',
+          "naxatw-bg-white naxatw-text-primary naxatw-border naxatw-border-primary hover:naxatw-shadow-top",
         ghost:
-          'naxatw-text-primary-400 naxatw-font-bold disabled:naxatw-text-grey-600 hover:naxatw-text-primary-500',
-        link: `naxatw-text-primary-400 naxatw-font-bold naxatw-underline-offset-4 naxatw-underline hover:naxatw-no-underline
-         naxatw-text-primarycolor hover:naxatw-shadow hover:naxatw-shadow-primary-400`,
+          "naxatw-text-white naxatw-font-bold disabled:naxatw-text-grey-600 hover:naxatw-text-primary",
+        link: `naxatw-text-primary naxatw-font-bold naxatw-underline-offset-4 naxatw-underline hover:naxatw-no-underline
+         naxatw-text-primarycolor hover:naxatw-shadow hover:naxatw-shadow-primary`,
       },
       size: {
-        default: 'naxatw-h-9 naxatw-py-2 naxatw-px-3',
-        sm: 'naxatw-h-7 naxatw-px-2 naxatw-rounded-lg',
-        lg: 'naxatw-h-11 naxatw-px-8 naxatw-rounded-md',
+        default: "naxatw-h-9 naxatw-py-2 naxatw-px-3",
+        sm: "naxatw-h-7 naxatw-px-2 naxatw-rounded-lg",
+        lg: "naxatw-h-11 naxatw-px-8 naxatw-rounded-md",
       },
     },
     defaultVariants: {
-      variant: 'default',
-      size: 'default',
+      variant: "default",
+      size: "default",
     },
-  },
+  }
 );
 
 export interface ButtonProps
@@ -47,7 +47,7 @@ export interface ButtonProps
 
 const ButtonContent = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : 'button';
+    const Comp = asChild ? Slot : "button";
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
@@ -55,9 +55,9 @@ const ButtonContent = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       />
     );
-  },
+  }
 );
-ButtonContent.displayName = 'Button';
+ButtonContent.displayName = "Button";
 
 interface IButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
