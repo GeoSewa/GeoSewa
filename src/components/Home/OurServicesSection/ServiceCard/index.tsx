@@ -18,7 +18,7 @@ export default function ServiceCard({
       className=" naxatw-p-4 naxatw-bg-white naxatw-rounded-xl naxatw-border naxatw-shadow-lg"
     >
       <Image src={image} width={60} />
-      <h4 className="naxatw-text-primary">{title}</h4>
+      <h4 className="naxatw-text-gray-800">{title}</h4>
       <p>{description}</p>
     </FlexColumn>
   );

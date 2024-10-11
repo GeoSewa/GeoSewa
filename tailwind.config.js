@@ -34,7 +34,7 @@ module.exports = {
         "screen-nav": "calc(100vh - 56px)",
       },
       colors: {
-        primary: "#001F3F",
+        primary: "#004677",
         secondary: "#3A6D8C",
         tertiary: "#6A9AB0",
         fourth: "#EAD881",

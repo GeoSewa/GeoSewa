@@ -3,9 +3,9 @@ import ServiceCard from "./ServiceCard";
 
 export default function OurServicesSection() {
   return (
-    <section className="services naxatw-w-full naxatw-bg-[#F7EEE0]">
+    <section className="services naxatw-w-full naxatw-bg-[#F5FAFF]">
       <div className="naxatw-container naxatw-py-20">
-        <p className="naxatw-text-[3rem] naxatw-text-primary naxatw-text-center naxatw-mb-8">
+        <p className="naxatw-text-[3rem] naxatw-text-gray-800 naxatw-text-center naxatw-mb-8">
           Our Services
         </p>
         <div className="naxatw-grid naxatw-grid-cols-2 naxatw-gap-14">
