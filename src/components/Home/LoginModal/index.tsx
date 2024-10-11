@@ -4,8 +4,8 @@ import Icon from "@Components/common/Icon";
 import { Flex, FlexRow } from "@Components/common/Layouts";
 import { Button } from "@Components/RadixComponents/Button";
 import Image from "@Components/RadixComponents/Image";
-import Person from "@Assets/images/person.svg";
-import googleIcon from "@Assets/images/google-icon.svg";
+import Person from "@Assets/images/Social-Icons/person.svg";
+import googleIcon from "@Assets/images/Social-Icons/google-icon.svg";
 import { useForm } from "react-hook-form";
 
 const initialState = {
