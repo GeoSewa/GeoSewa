@@ -1,11 +1,32 @@
-import Dashboard from '@Views/Dashboard';
-import { IRoute } from './types';
+import Home from "@Views/Home";
+import NotesPage from "@Views/Notes";
+import ExamsPage from "@Views/Exams";
+import ContactsPage from "@Views/Contact";
+import { IRoute } from "./types";
 
 const appRoutes: IRoute[] = [
   {
-    path: '/',
-    name: 'Dashboard ',
-    component: Dashboard,
+    path: "/",
+    name: "Home ",
+    component: Home,
+    authenticated: false,
+  },
+  {
+    path: "/notes",
+    name: "Notes ",
+    component: NotesPage,
+    authenticated: false,
+  },
+  {
+    path: "/exam",
+    name: "Exam ",
+    component: ExamsPage,
+    authenticated: false,
+  },
+  {
+    path: "/contact",
+    name: "Contact ",
+    component: ContactsPage,
     authenticated: false,
   },
 ];

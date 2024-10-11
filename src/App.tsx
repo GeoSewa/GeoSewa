@@ -1,44 +1,34 @@
-import { useLocation } from 'react-router-dom';
-import { initDomToCode } from 'dom-to-code';
-import { ToastContainer } from 'react-toastify';
-import { useTypedDispatch, useTypedSelector } from '@Store/hooks';
-import generateRoutes from '@Routes/generateRoutes';
-import appRoutes from '@Routes/appRoutes';
-import testRoutes from '@Routes/testRoutes';
+import { initDomToCode } from "dom-to-code";
+import { ToastContainer } from "react-toastify";
+import { useTypedDispatch, useTypedSelector } from "@Store/hooks";
+import generateRoutes from "@Routes/generateRoutes";
+import appRoutes from "@Routes/appRoutes";
+import testRoutes from "@Routes/testRoutes";
 import {
   setModalContent,
   setPromptDialogContent,
   toggleModal,
   togglePromptDialog,
-} from '@Store/actions/common';
-import 'react-toastify/dist/ReactToastify.css';
-import Modal from '@Components/common/Modal';
-import PromptDialog from '@Components/common/PromptDialog';
+} from "@Store/actions/common";
+import "react-toastify/dist/ReactToastify.css";
+import Modal from "@Components/common/Modal";
+import PromptDialog from "@Components/common/PromptDialog";
+import Navbar from "@Components/common/Navbar";
 import {
   getModalContent,
   getPromptDialogContent,
-} from '@Constants/modalContents';
+} from "@Constants/modalContents";
 
 export default function App() {
-  const { pathname } = useLocation();
   const dispatch = useTypedDispatch();
-  const showModal = useTypedSelector(state => state.common.showModal);
-  const modalContent = useTypedSelector(state => state.common.modalContent);
+  const showModal = useTypedSelector((state) => state.common.showModal);
+  const modalContent = useTypedSelector((state) => state.common.modalContent);
   const showPromptDialog = useTypedSelector(
-    state => state.common.showPromptDialog,
+    (state) => state.common.showPromptDialog
   );
   const promptDialogContent = useTypedSelector(
-    state => state.common.promptDialogContent,
+    (state) => state.common.promptDialogContent
   );
-
-  const routesWithoutSidebar = [
-    '/login',
-    '/sign-up',
-    '/forgot-password',
-    '/public-page',
-  ];
-
-  const hideSideBar = routesWithoutSidebar.some(url => pathname.includes(url));
 
   const handleModalClose = () => {
     dispatch(toggleModal());
@@ -56,21 +46,17 @@ export default function App() {
 
   return (
     <>
-      {process.env.NODE_ENV !== 'production' &&
+      {process.env.NODE_ENV !== "production" &&
         !process.env.DISABLE_DOM_TO_CODE &&
         initDomToCode()}
-      <div
-        className={`${
-          hideSideBar
-            ? 'naxatw-ml-0'
-            : `naxatw-ml-0 naxatw-flex md:naxatw-ml-[80px]`
-        }`}
-      >
+
+      <div className="app-root naxatw-flex naxatw-flex-col">
+        <Navbar />
         <ToastContainer />
 
         <Modal
           show={showModal}
-          className={getModalContent(modalContent)?.className || ''}
+          className={getModalContent(modalContent)?.className || ""}
           title={getModalContent(modalContent)?.title}
           onClose={handleModalClose}
           hideCloseButton={!!getModalContent(modalContent)?.hideCloseButton}
@@ -88,7 +74,7 @@ export default function App() {
 
         {generateRoutes({
           routes:
-            process.env.NODE_ENV !== 'production'
+            process.env.NODE_ENV !== "production"
               ? [...testRoutes, ...appRoutes]
               : appRoutes,
         })}
