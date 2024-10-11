@@ -2,7 +2,7 @@ const TestimonialCard = (card: Record<string, any>) => {
   const { image, student, quote, organization } = card;
 
   return (
-    <div className="testimonial-card naxatw-shadow-lg naxatw-rounded-xl naxatw-border naxatw-border-solid naxatw-border-[#E7EAEE] naxatw-bg-white naxatw-p-8 naxatw-text-center">
+    <div className="testimonial-card naxatw-cursor-default naxatw-shadow-lg naxatw-rounded-xl naxatw-border naxatw-border-solid naxatw-border-[#E7EAEE] naxatw-bg-white naxatw-p-8 naxatw-text-center">
       <div className="image-container naxatw-mx-auto naxatw-mb-10 naxatw-h-16 naxatw-w-16">
         <img
           src={image}

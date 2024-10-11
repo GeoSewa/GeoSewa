@@ -15,7 +15,7 @@ export default function ServiceCard({
   return (
     <FlexColumn
       gap={2}
-      className=" naxatw-p-4 naxatw-bg-white naxatw-rounded-xl naxatw-border naxatw-shadow-lg"
+      className="naxatw-p-4 naxatw-cursor-default naxatw-transform naxatw-transition-transform naxatw-duration-300 hover:naxatw-scale-105 naxatw-bg-white naxatw-rounded-xl naxatw-border naxatw-shadow-lg"
     >
       <Image src={image} width={60} />
       <h4 className="naxatw-text-gray-800">{title}</h4>

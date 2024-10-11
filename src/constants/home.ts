@@ -73,7 +73,7 @@ export const faqsDataList = [
     id: 6,
     question: "How can we contact you?",
     answer:
-      "You can contact or whatsapp us at 9763252325 or dm us at geosewa page.",
+      "You can contact or whatsapp us at 9763252325 or DM us at geosewa page.",
   },
 ];
 
