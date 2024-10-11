@@ -1,5 +1,7 @@
 import Home from "@Views/Home";
-import Notes from "@Components/Notes";
+import NotesPage from "@Views/Notes";
+import ExamsPage from "@Views/Exams";
+import ContactsPage from "@Views/Contact";
 import { IRoute } from "./types";
 
 const appRoutes: IRoute[] = [
@@ -12,7 +14,19 @@ const appRoutes: IRoute[] = [
   {
     path: "/notes",
     name: "Notes ",
-    component: Notes,
+    component: NotesPage,
+    authenticated: false,
+  },
+  {
+    path: "/exam",
+    name: "Exam ",
+    component: ExamsPage,
+    authenticated: false,
+  },
+  {
+    path: "/contact",
+    name: "Contact ",
+    component: ContactsPage,
     authenticated: false,
   },
 ];
