@@ -31,7 +31,7 @@ module.exports = {
         primary: ["Product Sans", "sans-serif"],
       },
       height: {
-        "screen-nav": "calc(100vh - 56px)",
+        "screen-nav": "calc(100vh - 68px)",
       },
       colors: {
         primary: "#004677",
