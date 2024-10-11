@@ -1,5 +1,10 @@
 import { studentsQuote } from "@Constants/home";
+import { motion } from "framer-motion";
 import TestimonialCard from "./TestimonialCard";
+import {
+  containerAnimationVariant,
+  fadeUpVariant,
+} from "@Constants/animations";
 
 export default function WhatStudentsSay() {
   return (
@@ -11,11 +16,19 @@ export default function WhatStudentsSay() {
             Say !
           </span>
         </p>
-        <div className="naxatw-grid naxatw-grid-cols-1 naxatw-gap-10 naxatw-mt-8 md:naxatw-grid-cols-2 xl:naxatw-grid-cols-3">
+        <motion.div
+          variants={containerAnimationVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="naxatw-grid naxatw-grid-cols-1 naxatw-gap-10 naxatw-mt-8 md:naxatw-grid-cols-2 xl:naxatw-grid-cols-3"
+        >
           {studentsQuote.slice(1, 4).map((card) => (
-            <TestimonialCard key={card.id} {...card} />
+            <motion.div key={card.id} variants={fadeUpVariant}>
+              <TestimonialCard key={card.id} {...card} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

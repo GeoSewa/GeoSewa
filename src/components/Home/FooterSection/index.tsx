@@ -10,7 +10,7 @@ import EsewaLogo from "@Assets/images/Social-Icons/esewa-icon.svg";
 export default function FooterSection() {
   return (
     <section className="footer naxatw-bg-primary">
-      <div className="naxatw-container naxatw-py-20 naxatw-flex naxatw-justify-between">
+      <div className="naxatw-container naxatw-py-20 naxatw-flex naxatw-justify-between naxatw-animate-fade-up">
         <FlexColumn gap={2.5}>
           <FlexRow className="naxatw-text-white naxatw-items-center" gap={2}>
             <Icon name="public" />

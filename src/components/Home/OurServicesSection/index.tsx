@@ -1,6 +1,11 @@
 import { servicesContent } from "@Constants/home";
 import ServiceCard from "./ServiceCard";
 import { FlexRow } from "@Components/common/Layouts";
+import { motion } from "framer-motion";
+import {
+  containerAnimationVariant,
+  fadeUpVariant,
+} from "@Constants/animations";
 
 export default function OurServicesSection() {
   return (
@@ -14,16 +19,24 @@ export default function OurServicesSection() {
             Services
           </p>
         </FlexRow>
-        <div className="naxatw-grid naxatw-grid-cols-2 naxatw-gap-14">
+        <motion.div
+          variants={containerAnimationVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="naxatw-grid naxatw-grid-cols-2 naxatw-gap-14"
+        >
           {servicesContent.map((service) => (
-            <ServiceCard
-              key={service.id}
-              image={service.image}
-              title={service.title}
-              description={service.description}
-            />
+            <motion.div key={service.id} variants={fadeUpVariant}>
+              <ServiceCard
+                key={service.id}
+                image={service.image}
+                title={service.title}
+                description={service.description}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

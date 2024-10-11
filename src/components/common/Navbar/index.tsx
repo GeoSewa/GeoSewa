@@ -27,6 +27,7 @@ export default function Navbar() {
           <FlexRow className="naxatw-gap-4 naxatw-mt-1 naxatw-text-white">
             {navigationLinks.map((nav) => (
               <NavLink
+                key={nav.path}
                 to={nav.path}
                 className={({ isActive }) =>
                   `${
