@@ -18,6 +18,7 @@ import {
   getModalContent,
   getPromptDialogContent,
 } from "@Constants/modalContents";
+import ScrollToTop from "@Components/common/ScrollToTop";
 
 export default function App() {
   const dispatch = useTypedDispatch();
@@ -78,6 +79,8 @@ export default function App() {
               ? [...testRoutes, ...appRoutes]
               : appRoutes,
         })}
+
+        <ScrollToTop />
       </div>
     </>
   );
