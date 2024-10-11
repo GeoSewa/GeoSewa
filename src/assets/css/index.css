@@ -1,18 +1,38 @@
 @font-face {
-  font-family: 'Product Sans';
+  font-family: "Product Sans";
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/ProductSans-Regular.ttf') format('truetype'),
-    url('../fonts/ProductSans-Regular.ttf') format('truetype');
+  src:
+    url("../fonts/ProductSans-Regular.ttf") format("truetype"),
+    url("../fonts/ProductSans-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/ProductSans-Bold.ttf') format('truetype'), url('../fonts/ProductSans-Bold.ttf') format('truetype');
+  src:
+    url("../fonts/ProductSans-Bold.ttf") format("truetype"),
+    url("../fonts/ProductSans-Bold.ttf") format("truetype");
 }
 
 html,
 body {
-  font-family: 'Product Sans', sans-serif;
+  font-family: "Product Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); /* Color of the scrollbar */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7); /* Color on hover */
 }
