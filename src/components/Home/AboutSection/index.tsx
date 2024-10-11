@@ -4,7 +4,7 @@ import AboutImage from "@Assets/images/about-image.svg";
 
 export default function AboutSection() {
   return (
-    <section className="about naxatw-bg-fourth naxatw-h-[25rem]">
+    <section className="about naxatw-bg-white naxatw-h-[25rem]">
       <FlexRow className="naxatw-container naxatw-py-20 naxatw-text-gray-800 naxatw-items-center">
         <div className="naxatw-w-1/2">
           <Image src={AboutImage} width={350} />

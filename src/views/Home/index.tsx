@@ -1,5 +1,6 @@
 import LandingSection from "@Components/Home/LandingSection";
 import AboutSection from "@Components/Home/AboutSection";
+import OurServicesSection from "@Components/Home/OurServicesSection";
 import FooterSection from "@Components/Home/FooterSection";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="scrollbar">
       <LandingSection />
       <AboutSection />
+      <OurServicesSection />
       <FooterSection />
     </main>
   );
