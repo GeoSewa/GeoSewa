@@ -17,7 +17,7 @@ export function getModalContent(content: ModalContentsType): ModalReturnType {
       return {
         title: "",
         content: <LoginModal />,
-        className: "naxatw-w-[30rem]",
+        className: "naxatw-w-[28rem]",
       };
     default:
       return {
