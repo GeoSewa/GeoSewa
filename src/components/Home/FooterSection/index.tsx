@@ -20,10 +20,10 @@ export default function FooterSection() {
           </FlexRow>
           <FlexColumn gap={1} className="naxatw-ml-3">
             <p className="naxatw-text-white naxatw-text-body-lg">
-              geosewa@gmail.com
+              geosewa7@gmail.com
             </p>
             <p className="naxatw-text-white naxatw-text-body-lg">
-              +977-9808470838
+              +977-9763252325
             </p>
           </FlexColumn>
         </FlexColumn>
