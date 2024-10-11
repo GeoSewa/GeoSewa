@@ -11,7 +11,7 @@ export default function Navbar() {
   const navigate = useNavigate();
 
   return (
-    <nav className="naxatw-shadow-lg naxatw-bg-primary">
+    <nav className="naxatw-bg-primary naxatw-sticky naxatw-top-0 naxatw-z-10">
       <nav className="naxatw-container naxatw-py-3">
         <FlexRow className="naxatw-items-center naxatw-justify-between">
           <FlexRow className="naxatw-text-white naxatw-items-center" gap={2}>
