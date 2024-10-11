@@ -1,11 +1,17 @@
-import { Flex } from "@Components/common/Layouts";
+import ContactForm from "./ContactForm";
+import ContactMap from "./Map";
 
-export default function Notes() {
+export default function Contact() {
   return (
-    <main className="notes naxatw-h-screen-nav naxatw-w-full">
-      <Flex className="naxatw-h-full naxatw-justify-center naxatw-animate-fade-up naxatw-font-medium naxatw-items-center">
-        <h3>The Contact section is in progress. Stay tuned....</h3>
-      </Flex>
+    <main className="contact naxatw-h-screen-nav naxatw-w-full">
+      <div className="naxatw-flex naxatw-container naxatw-py-14 naxatw-gap-8">
+        <div className="naxatw-w-[55%]">
+          <ContactForm />
+        </div>
+        <div className="naxatw-w-[45%] naxatw-rounded-xl naxatw-overflow-hidden naxatw-border naxatw-border-primary">
+          <ContactMap />
+        </div>
+      </div>
     </main>
   );
 }
