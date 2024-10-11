@@ -52,11 +52,13 @@ const FaqAccordion = ({ faqsDataList }: IFaqAccordionProps) => {
                   />
                 )}
               </AccordionTrigger>
-              <AccordionContent className="data-[state=closed]:naxatw-animate-accordion-up">
-                <p className="naxatw-overflow-hidden naxatw-pb-6 naxatw-text-lg naxatw-font-normal naxatw-tracking-[-0.01125rem] naxatw-text-[#4E4E4E]">
-                  {item.answer}
-                </p>
-              </AccordionContent>
+              {activeItem === item.id && (
+                <AccordionContent className="data-[state=closed]:naxatw-animate-accordion-up">
+                  <p className="naxatw-overflow-hidden naxatw-pb-6 naxatw-text-lg naxatw-font-normal naxatw-tracking-[-0.01125rem] naxatw-text-[#4E4E4E]">
+                    {item.answer}
+                  </p>
+                </AccordionContent>
+              )}
             </AccordionItem>
           );
         })}
