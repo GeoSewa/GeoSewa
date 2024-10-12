@@ -1,16 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit';
-import type { CaseReducer, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
+import type { CaseReducer, PayloadAction } from "@reduxjs/toolkit";
 import {
   ModalContentsType,
   PromptDialogContentsType,
-} from '@Constants/modalContents';
-import persist from '@Store/persist';
+} from "@Constants/modalContents";
+import persist from "@Store/persist";
 
 export interface CommonState {
   showModal: boolean;
   modalContent: ModalContentsType;
   showPromptDialog: boolean;
   promptDialogContent: PromptDialogContentsType;
+  navbarToggled: boolean;
 }
 
 const initialState: CommonState = {
@@ -18,6 +19,7 @@ const initialState: CommonState = {
   modalContent: null,
   showPromptDialog: false,
   promptDialogContent: null,
+  navbarToggled: false,
 };
 
 const setCommonState: CaseReducer<
@@ -35,6 +37,14 @@ const toggleModal: CaseReducer<
   ...state,
   showModal: !!action.payload,
   modalContent: action.payload || state.modalContent,
+});
+
+const setToggleNavbar: CaseReducer<CommonState, PayloadAction<boolean>> = (
+  state,
+  action
+) => ({
+  ...state,
+  navbarToggled: action.payload,
 });
 
 const setModalContent: CaseReducer<
@@ -63,12 +73,13 @@ const setPromptDialogContent: CaseReducer<
 });
 
 const commonSlice = createSlice({
-  name: 'common',
+  name: "common",
   initialState,
   reducers: {
     setCommonState,
     toggleModal,
     setModalContent,
+    setToggleNavbar,
     togglePromptDialog,
     setPromptDialogContent,
   },
@@ -76,4 +87,4 @@ const commonSlice = createSlice({
 
 export { commonSlice };
 
-export default persist('common', [], commonSlice.reducer);
+export default persist("common", [], commonSlice.reducer);
