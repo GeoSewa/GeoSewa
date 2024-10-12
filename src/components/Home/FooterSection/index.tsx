@@ -5,12 +5,11 @@ import TwitterLogo from "@Assets/images/Social-Icons/twitter-icon.svg";
 import FacebookLogo from "@Assets/images/Social-Icons/facebook-icon.svg";
 import LinkedInLogo from "@Assets/images/Social-Icons/linkedin-icon.svg";
 import InstagramLogo from "@Assets/images/Social-Icons/instagram-icon.svg";
-import EsewaLogo from "@Assets/images/Social-Icons/esewa-icon.svg";
 
 export default function FooterSection() {
   return (
     <section className="footer naxatw-bg-primary">
-      <div className="naxatw-container naxatw-py-20 naxatw-flex naxatw-justify-between naxatw-flex-col md:naxatw-flex-row naxatw-items-center naxatw-gap-14 naxatw-animate-fade-up">
+      <div className="naxatw-container naxatw-py-10 md:naxatw-py-20 naxatw-flex naxatw-justify-between naxatw-flex-col md:naxatw-flex-row naxatw-items-center naxatw-gap-14 naxatw-animate-fade-up">
         <FlexColumn gap={2.5}>
           <FlexRow className="naxatw-text-white naxatw-items-center" gap={2}>
             <Icon name="public" />
@@ -41,7 +40,7 @@ export default function FooterSection() {
             Payment Partners
           </h4>
           <FlexRow>
-            <Image src={EsewaLogo} width={20} />
+            <p className="naxatw-text-white naxatw-text-xl">Khalti</p>
           </FlexRow>
         </FlexColumn>
       </div>

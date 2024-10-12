@@ -79,6 +79,14 @@ export const faqsDataList = [
 
 export const studentsQuote = [
   {
+    id: 3,
+    student: "Karan Chaudhary",
+    organization: "IOE, WRC",
+    image: KaranChd,
+    quote:
+      "Very helpful and worth it. I recommend everyone to participate in the moct test conducted by Geo Sewa. It helps a lot.",
+  },
+  {
     id: 1,
     student: "Arun Bhumi",
     organization: "KU",
@@ -95,17 +103,9 @@ export const studentsQuote = [
       "Thanks for encouraging and better confidence as the mock test is really worth it. Huge love for all Geosewa team and memebers",
   },
   {
-    id: 3,
-    student: "Karan Chaudhary",
-    organization: "IOE, WRC",
-    image: KaranChd,
-    quote:
-      "Very helpful and worth it. I recommend everyone to participate in the moct test conducted by Geo Sewa. It helps a lot.",
-  },
-  {
     id: 4,
     student: "Samrat Acharya",
-    organization: "IOE, WRC",
+    organization: "KU",
     image: SamratAch,
     quote:
       "Thank you for everything. Mock Test was really a worth it. It gives you the time calculation for the questions, past question (which gets repeat in Real Examination).So, Thank you for everything.",

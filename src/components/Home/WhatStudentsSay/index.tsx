@@ -9,7 +9,7 @@ import {
 export default function WhatStudentsSay() {
   return (
     <section className="what-students-say naxatw-bg-[#FBF8F3]">
-      <div className="naxatw-py-20 naxatw-container">
+      <div className="naxatw-py-10 md:naxatw-py-20 naxatw-container">
         <p className="naxatw-text-[3rem] naxatw-text-gray-800 naxatw-text-center">
           Our Students
           <span className="naxatw-text-[3rem] naxatw-ml-2 naxatw-text-[#59AAFB]">

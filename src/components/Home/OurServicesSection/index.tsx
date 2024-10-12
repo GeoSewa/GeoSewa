@@ -10,7 +10,7 @@ import {
 export default function OurServicesSection() {
   return (
     <section className="services naxatw-w-full naxatw-bg-[#F5FAFF]">
-      <div className="naxatw-container naxatw-py-20">
+      <div className="naxatw-container naxatw-py-10 md:naxatw-py-20">
         <FlexRow gap={2}>
           <p className="naxatw-text-[3rem] naxatw-text-gray-800 naxatw-text-center naxatw-mb-8">
             Our
