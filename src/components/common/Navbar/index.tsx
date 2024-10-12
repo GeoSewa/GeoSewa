@@ -5,10 +5,13 @@ import { Button } from "@Components/RadixComponents/Button";
 import { toggleModal } from "@Store/actions/common";
 import Icon from "../Icon";
 import { FlexRow } from "../Layouts";
+import ToggledNavbar from "./ToggledNavbar";
+import { useRef } from "react";
 
 export default function Navbar() {
   const dispatch = useTypedDispatch();
   const navigate = useNavigate();
+  const mobileViewNav = useRef<HTMLElement | null>(null);
 
   return (
     <nav className="naxatw-bg-primary naxatw-sticky naxatw-top-0 naxatw-z-10">
@@ -24,7 +27,7 @@ export default function Navbar() {
               <h3 className="naxatw-text-white naxatw-font-medium">GeoSewa</h3>
             </div>
           </FlexRow>
-          <FlexRow className="naxatw-gap-4 naxatw-mt-1 naxatw-text-white">
+          <FlexRow className="naxatw-hidden md:naxatw-flex naxatw-gap-4 naxatw-mt-1 naxatw-text-white">
             {navigationLinks.map((nav) => (
               <NavLink
                 key={nav.path}
@@ -39,7 +42,10 @@ export default function Navbar() {
               </NavLink>
             ))}
           </FlexRow>
-          <FlexRow className="naxatw-items-center" gap={2}>
+          <FlexRow
+            className="naxatw-hidden md:naxatw-flex naxatw-items-center"
+            gap={2}
+          >
             <Button
               variant="outline"
               className="naxatw-w-24 naxatw-text-body-lg"
@@ -54,6 +60,10 @@ export default function Navbar() {
               Sign Up
             </Button>
           </FlexRow>
+          <ToggledNavbar
+            navItems={navigationLinks}
+            mobileViewNavRef={mobileViewNav}
+          />
         </FlexRow>
       </nav>
     </nav>

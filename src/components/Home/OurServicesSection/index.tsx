@@ -10,7 +10,7 @@ import {
 export default function OurServicesSection() {
   return (
     <section className="services naxatw-w-full naxatw-bg-[#F5FAFF]">
-      <div className="naxatw-container naxatw-py-20">
+      <div className="naxatw-container naxatw-py-10 md:naxatw-py-20">
         <FlexRow gap={2}>
           <p className="naxatw-text-[3rem] naxatw-text-gray-800 naxatw-text-center naxatw-mb-8">
             Our
@@ -24,7 +24,7 @@ export default function OurServicesSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="naxatw-grid naxatw-grid-cols-2 naxatw-gap-14"
+          className="naxatw-grid naxatw-grid-cols-1 md:naxatw-grid-cols-2 naxatw-gap-14"
         >
           {servicesContent.map((service) => (
             <motion.div key={service.id} variants={fadeUpVariant}>

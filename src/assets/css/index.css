@@ -40,3 +40,8 @@ body {
 .button-circle:hover .button-cirlce-svgs {
   transform: translateX(50%);
 }
+
+.nav-open {
+  pointer-events: initial;
+  clip-path: inset(0 0% 0 0) !important;
+}

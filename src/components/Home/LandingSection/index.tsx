@@ -20,7 +20,7 @@ export default function LandingSection() {
         <Image
           src={LandingPageImage}
           width={400}
-          className="naxatw-animate-fade-up"
+          className="naxatw-animate-fade-up naxatw-hidden md:naxatw-flex"
         />
       </FlexRow>
     </section>
