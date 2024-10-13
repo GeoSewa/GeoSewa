@@ -42,7 +42,7 @@ const ToggledNavbar = ({ navItems, mobileViewNavRef }: IToggledNavbarProps) => {
 
       {toggleNavbar && (
         <nav
-          className="primary-navigation naxatw-fixed naxatw-z-50 naxatw-inset-x-0 naxatw-bottom-0 naxatw-top-[70px] naxatw-z-[99] naxatw-block naxatw-bg-[#FBF8F3] md:naxatw-hidden"
+          className="primary-navigation naxatw-fixed naxatw-inset-x-0 naxatw-bottom-0 naxatw-top-[70px] naxatw-z-[99] naxatw-block naxatw-bg-[#FBF8F3] md:naxatw-hidden"
           ref={mobileViewNavRef}
         >
           <div className="naxatw-flex naxatw-h-full naxatw-flex-col">
@@ -64,7 +64,7 @@ const ToggledNavbar = ({ navItems, mobileViewNavRef }: IToggledNavbarProps) => {
               })}
             </div>
             <p className="naxatw-border-t naxatw-border-solid naxatw-border-t-[#EDEDED] naxatw-py-6 naxatw-text-center naxatw-text-base naxatw-leading-[1.575rem] naxatw-tracking-[-0.00563rem] naxatw-text-[#000]">
-              © IMAP {new Date().getFullYear()}. All Rights Reserved.
+              © GeoSewa {new Date().getFullYear()}. All Rights Reserved.
             </p>
           </div>
         </nav>
