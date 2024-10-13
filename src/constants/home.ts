@@ -23,14 +23,14 @@ export const servicesContent = [
       "Extensive mock tests with previous NEC questions help gauge preparation and build confidence for the exam.",
   },
   {
-    id: 1,
+    id: 3,
     image: PscPrep,
     title: "PSC Preparation",
     description:
       "We offer curated materials for PSC exams in Nepal, focusing on 4th, 5th, and 7th levels to give you an edge.",
   },
   {
-    id: 1,
+    id: 4,
     image: ItServices,
     title: "GeoSpatial And IT services",
     description:
@@ -88,7 +88,7 @@ export const studentsQuote = [
   },
   {
     id: 1,
-    student: "Arun Bhumi",
+    student: "Arun Kumar Bhomi",
     organization: "KU",
     image: ArunBhumi,
     quote:
