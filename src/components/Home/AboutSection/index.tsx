@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section className="about naxatw-bg-white naxatw-h-fit md:naxatw-h-[25rem]">
+    <section className="about naxatw-bg-white naxatw-h-fit lg:naxatw-h-[25rem]">
       <div className="naxatw-flex naxatw-flex-col lg:naxatw-flex-row naxatw-container naxatw-py-10 lg:naxatw-py-20 naxatw-text-gray-800 naxatw-items-center">
         <motion.div
           initial={{ translateX: -200, opacity: 0 }}
@@ -21,7 +21,7 @@ export default function AboutSection() {
           whileInView={{ translateX: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="naxatw-flex naxatw-flex-col naxatw-gap-8 naxatw-w-full md:naxatw-w-1/2"
+          className="naxatw-flex naxatw-flex-col naxatw-gap-8 naxatw-w-full lg:naxatw-w-1/2"
         >
           <p className="naxatw-text-[3rem]">About Us</p>
           <p>
