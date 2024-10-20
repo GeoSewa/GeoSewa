@@ -3,7 +3,7 @@ import { FlexRow } from "@Components/common/Layouts";
 
 export default function Exams() {
   const handleClick = () => {
-    window.open("https://forms.gle/LWxHJy1ms8jLJTbe6", "_blank");
+    window.open("https://forms.gle/GKfsJFVb8ACvhPbn9", "_blank");
   };
   return (
     <main className="notes naxatw-h-screen-nav naxatw-w-full naxatw-bg-white">
@@ -19,7 +19,7 @@ export default function Exams() {
               <Icon name="quiz" className="naxatw-w-10" />
               <p>NEC License Mock Exam</p>
             </FlexRow>
-            <p>Ashad 28, 2081</p>
+            <p>Kartik 04, 2081</p>
           </FlexRow>
         </div>
       </div>
