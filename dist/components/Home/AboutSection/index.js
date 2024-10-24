@@ -1,7 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import Image from "@Components/RadixComponents/Image";
-import AboutImage from "@Assets/images/about-image.svg";
-import { motion } from "framer-motion";
-export default function AboutSection() {
-    return (_jsx("section", { className: "about naxatw-bg-white naxatw-h-fit lg:naxatw-h-[25rem]", children: _jsxs("div", { className: "naxatw-flex naxatw-flex-col lg:naxatw-flex-row naxatw-container naxatw-py-10 lg:naxatw-py-20 naxatw-text-gray-800 naxatw-items-center", children: [_jsx(motion.div, { initial: { translateX: -200, opacity: 0 }, whileInView: { translateX: 0, opacity: 1 }, transition: { duration: 0.7 }, viewport: { once: true }, className: "naxatw-w-1/2", children: _jsx(Image, { src: AboutImage, width: 350 }) }), _jsxs(motion.div, { initial: { translateX: 200, opacity: 0 }, whileInView: { translateX: 0, opacity: 1 }, transition: { duration: 0.7 }, viewport: { once: true }, className: "naxatw-flex naxatw-flex-col naxatw-gap-8 naxatw-w-full lg:naxatw-w-1/2", children: [_jsx("p", { className: "naxatw-text-[3rem]", children: "About Us" }), _jsx("p", { children: "At Geosewa, we provide essential resources for geomatics engineers, including mock tests and past exam questions for the NEC Geomatics Engineering License. Our services also encompass professional mapping and IT solutions. Join us to access top-tier study materials, expert guidance, and advanced mapping services, all designed to help you excel in your geomatics engineering career." })] })] }) }));
-}

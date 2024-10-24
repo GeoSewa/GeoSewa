@@ -1,6 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-const TestimonialCard = (card) => {
-    const { image, student, quote, organization } = card;
-    return (_jsxs("div", { className: "testimonial-card naxatw-cursor-default naxatw-shadow-lg naxatw-rounded-xl naxatw-border naxatw-border-solid naxatw-border-[#E7EAEE] naxatw-bg-white naxatw-p-8 naxatw-text-center", children: [_jsx("div", { className: "image-container naxatw-mx-auto naxatw-mb-10 naxatw-h-16 naxatw-w-16", children: _jsx("img", { src: image, alt: student, width: 100, height: 100, className: "naxatw-rounded-[50%] naxatw-object-cover naxatw-object-center" }) }), _jsxs("div", { className: "text-container", children: [_jsx("div", { className: "description naxatw-mb-10", children: _jsx("p", { className: "naxatw-text-base naxatw-leading-7 naxatw-tracking-[-0.01125rem] naxatw-text-[#07090D]", children: quote }) }), _jsxs("div", { className: "cutomer-details", children: [_jsx("p", { className: "naxatw-text-base naxatw-font-medium naxatw-leading-6 naxatw-tracking-[-0.03rem] naxatw-text-[#07090D]", children: student }), _jsx("span", { className: "naxatw-text-[0.875rem] naxatw-leading-6 naxatw-tracking-[-0.00875rem] naxatw-text-[#818A9C]", children: organization })] })] })] }));
-};
-export default TestimonialCard;

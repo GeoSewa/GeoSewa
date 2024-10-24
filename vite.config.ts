@@ -5,6 +5,10 @@ import { defineConfig } from 'vite';
 
 dotenv.config();
 export default defineConfig({
+  base: './',
+  build: {
+    outDir: './dist', // Output directly to the root of the project
+  },
   plugins: [
     react(),
     process.env.NODE_ENV !== 'production'
